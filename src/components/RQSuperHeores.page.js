@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useQuery } from "react-query";
+import { Link } from "react-router-dom";
 
 const RQSuperHeroesPage = () => {
     const { isLoading, data, isError, error } = useQuery("super-heroes", () => {
@@ -18,7 +19,9 @@ const RQSuperHeroesPage = () => {
         <>
             <h2>RQSuperHeroesPage</h2>
             {data?.data.map((hero) => (
-                <div key={hero.id}>{hero.name}</div>
+                <div key={hero.id}>
+                    <Link to={`/rq-super-heroes/${hero.id}`}>{hero.name}</Link>
+                </div>
             ))}
         </>
     );

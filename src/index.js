@@ -5,9 +5,11 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { QueryClientProvider, QueryClient } from "react-query";
+import { ReactQueryDevtools } from "react-query/devtools";
 
 import HomePage from "./components/Home.page";
 import SuperHeroesPage from "./components/SuperHeores.page";
+import RQSuperHeroPage from "./components/RQSuperHero.page";
 import RQSuperHeroesPage from "./components/RQSuperHeores.page";
 
 const queryClient = new QueryClient();
@@ -24,8 +26,13 @@ ReactDOM.render(
                         path="/rq-super-heroes"
                         element={<RQSuperHeroesPage />}
                     />
+                    <Route
+                        path="/rq-super-heroes/:id"
+                        element={<RQSuperHeroPage />}
+                    />
                 </Routes>
             </BrowserRouter>
+            <ReactQueryDevtools initialIsOpen={false} position="bottom-right" />
         </QueryClientProvider>
     </React.StrictMode>,
     document.getElementById("root")
