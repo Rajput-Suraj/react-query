@@ -1,0 +1,19 @@
+{
+    "superheores": [
+        {
+            "id": 1,
+            "name": "Batman",
+            "alterego": "Bruce Wayne"
+        },
+        {
+            "id": 2,
+            "name": "Superman",
+            "alterego": "Clark Kent"
+        },
+        {
+            "id": 1,
+            "name": "Wonder Women",
+            "alterego": "Princess Diana"
+        }
+    ]
+}
