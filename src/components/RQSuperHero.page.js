@@ -20,8 +20,9 @@ const RQSuperHeroPage = () => {
             <h2>RQSuperHero Details</h2>
             {
                 <>
-                    <h3>{data?.data.name}</h3>
-                    <h3>{data?.data.alterego}</h3>
+                    <h3>
+                        {data?.data.name} - {data?.data.alterego}
+                    </h3>
                 </>
             }
         </>
