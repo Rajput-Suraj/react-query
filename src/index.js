@@ -4,8 +4,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import SuperHeoresPage from "./components/SuperHeores.page";
-import RQSuperHeoresPage from "./components/RQSuperHeores.page";
+import SuperHeroesPage from "./components/SuperHeores.page";
+import RQSuperHeroesPage from "./components/RQSuperHeores.page";
 import HomePage from "./components/Home.page";
 
 ReactDOM.render(
@@ -14,10 +14,10 @@ ReactDOM.render(
             <App />
             <Routes>
                 <Route path="/" element={<HomePage />} />
-                <Route path="/super-heroes" element={<SuperHeoresPage />} />
+                <Route path="/super-heroes" element={<SuperHeroesPage />} />
                 <Route
                     path="/rq-super-heroes"
-                    element={<RQSuperHeoresPage />}
+                    element={<RQSuperHeroesPage />}
                 />
             </Routes>
         </BrowserRouter>

@@ -1,5 +1,5 @@
 {
-    "superheores": [
+    "superheroes": [
         {
             "id": 1,
             "name": "Batman",
@@ -11,7 +11,7 @@
             "alterego": "Clark Kent"
         },
         {
-            "id": 1,
+            "id": 3,
             "name": "Wonder Women",
             "alterego": "Princess Diana"
         }

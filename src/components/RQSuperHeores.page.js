@@ -1,5 +1,5 @@
-const RQSuperHeoresPage = () => {
-    return <div>RQSuperHeoresPage</div>;
+const RQSuperHeroesPage = () => {
+    return <div>RQSuperHeroesPage</div>;
 };
 
-export default RQSuperHeoresPage;
+export default RQSuperHeroesPage;
